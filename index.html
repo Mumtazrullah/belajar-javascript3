@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fungsi dan Array</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <h2>Saya ingin belajar fungsi dan array</h2>
+    <button id="ubahElemen">Ubah Teks dan Warna</button>
+    <script>
+        // Mendapatkan elemen "h1" dan "h2"
+        var h1 = document.querySelector("h1");
+        var h2 = document.querySelector("h2");
+
+        // Mendapatkan elemen tombol
+        var tombolUbah = document.getElementById("ubahElemen");
+
+        // Menambahkan event listener untuk mengubah teks dan warna saat tombol ditekan
+        tombolUbah.addEventListener("click", function() {
+            // Mengubah textContent dari elemen "h1"
+            h1.textContent = "Belajar DOM JavaScript (Tombol Ditekan)";
+
+            // Mengubah textContent dari elemen "h2"
+            h2.textContent = "Saya ingin belajar fungsi dan array (Tombol Ditekan)";
+
+            // Mengubah warna teks elemen "h2" menjadi oranye
+            h2.style.color = "orange";
+
+            // Mengubah warna latar belakang elemen "h2" menjadi abu-abu
+            h2.style.backgroundColor = "black";
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
